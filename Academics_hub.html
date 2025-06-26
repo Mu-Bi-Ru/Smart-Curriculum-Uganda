@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Curriculum Uganda - Academics Hub</title>
+  <link rel="stylesheet" href="style/main.css" />
+  <script defer src="js/main.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <style>
+    :root {
+      --primary: #1b2d4f;
+      --accent: #c4f000;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--white);
+      color: var(--primary);
+    }
+
+    header {
+      background-color: var(--primary);
+      color: var(--white);
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      background-color: var(--accent);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      padding: 0.5rem;
+    }
+
+    nav a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: darkgreen;
+    }
+
+    .hub-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 3rem;  /* Increased gap for more space between the cards */
+      padding: 2rem;
+      margin: auto;
+    }
+
+    .card {
+      background-color: var(--accent);
+      padding: 2rem; /* Increased padding for more space inside cards */
+      border-radius: 8px;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 2px 4px 16px rgba(0,0,0,0.3);
+    }
+
+    .card h2 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .card p {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    .card button {
+      background-color: var(--primary);
+      color: var(--white);
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .card button:hover {
+      background-color: #0f1d33;
+    }
+
+    footer {
+      background-color: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+      font-size: 1rem;
+      border-top: 5px solid var(--accent);
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    footer .social a {
+      font-size: 1.5rem;
+      margin: 0 15px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Smart Curriculum Uganda</h1>
+    <p>STEM is the Solution</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="academic.html">Academics</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="forms.html">Forms</a>
+    <a href="community.html">Community</a>
+    <a href="games.html">Games</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main class="hub-section">
+    <section style="padding: 2rem; text-align: center; max-width: 900px; margin: auto;">
+      <h2 style="color: var(--primary); margin-bottom: 1rem;">About the Academics Hub</h2>
+      <p style="line-height: 1.6; margin-bottom: 1rem;">
+        The Academics Hub is a central resource on the Smart Curriculum Uganda platform, designed to provide students, teachers, and schools with curated academic content aligned with the new Ugandan curriculum. It consolidates key academic tools for effective learning and curriculum implementation.
+      </p>
+
+      <div class="card">
+        <h2>Subject Resources</h2>
+        <p>Access syllabuses, notes, and lesson guides tailored to the Ugandan curriculum.</p>
+        <button onclick="location.href='subject-resources.html'">Open</button>
+      </div>
+
+      <div class="card">
+        <h2>Revision Materials</h2>
+        <p>Download revision booklets, past papers, and marking guides for all levels.</p>
+        <button onclick="location.href='revision.html'">Open</button>
+      </div>
+
+      <div class="card">
+        <h2>Learning Aids</h2>
+        <p>Explore videos, animations, simulations, and interactive tools for better learning.</p>
+        <button onclick="location.href='aids.html'">Open</button>
+      </div>
+
+      <div class="card">
+        <h2>Competency Tasks</h2>
+        <p>Find practical projects and assessment tasks aligned with curriculum competencies.</p>
+        <button onclick="location.href='tasks.html'">Open</button>
+      </div>
+    </section>
+
+    <section style="padding: 2rem; text-align: center; max-width: 900px; margin: auto;">
+      <h1 style="color: var(--primary); margin: 1.5rem 0 1rem;">Impact</h1>
+      <p style="line-height: 1.6;">
+        Through the Academics Hub, thousands of learners across Uganda gain access to digital syllabuses, revision tools, and interactive content. It bridges the resource gap between urban and rural schools, driving national academic transformation.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <p style="font-size: 1.5rem;"><strong>&copy; 2025 Smart Curriculum Uganda</strong></p>
+      <p>All Rights Reserved.</p>
+      <div class="social" style="margin: 1rem 0;">
+        <a href="https://www.facebook.com/SmartCurriculumUganda" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/SmartCurriculumUganda" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/SmartCurriculumUganda" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p>Contact Us:</p>
+      <p><a href="mailto:info@smartcurriculum.ug"><i class="fas fa-envelope"></i> info@smartcurriculum.ug</a></p>
+      <p><a href="https://wa.me/256701234567" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></p>
+      <p><a href="tel:+256701234567"><i class="fas fa-phone"></i> +256 701 234 567</a></p>
+    </div>
+  </footer>
+</body>
+</html>

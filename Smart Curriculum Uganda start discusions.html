@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Curriculum Uganda - Community</title>
+  <link rel="stylesheet" href="style/main.css" />
+  <script defer src="js/main.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <style>
+    :root {
+      --primary: #1b2d4f;
+      --accent: #c4f000;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--white);
+      color: var(--primary);
+    }
+
+    header {
+      background-color: var(--primary);
+      color: var(--white);
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      background-color: var(--accent);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      padding: 0.5rem;
+    }
+
+    nav a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: darkgreen;
+    }
+
+    .community-hero {
+      background: linear-gradient(to right, var(--primary), var(--accent));
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    .community-section {
+      padding: 2rem;
+    }
+
+    .post-box {
+      background-color: #f4f4f4;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .post-box h3 {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .post-box p {
+      margin-top: 1rem;
+    }
+
+    .comment-input {
+      width: 100%;
+      padding: 0.5rem;
+      margin: 1rem 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .comment-btn {
+      background-color: var(--primary);
+      color: var(--white);
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .comment-btn:hover {
+      background-color: darkblue;
+    }
+
+    .comments p {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+    }
+
+    .submit-form {
+      margin-top: 2rem;
+      background: #f9f9f9;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .submit-form input,
+    .submit-form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .submit-form button {
+      background-color: var(--primary);
+      color: var(--white);
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .submit-form button:hover {
+      background-color: darkblue;
+    }
+
+        footer {
+      background-color: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+      font-size: 1rem;
+      border-top: 5px solid var(--accent);
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    footer .social a {
+      font-size: 1.5rem;
+      margin: 0 10px;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Smart Curriculum Uganda</h1>
+    <p>Community Voices</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="academic.html">Academics</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="forms.html">Forms</a>
+    <a href="community.html">Community</a>
+    <a href="games.html">Games</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="community-hero">
+    <h1>Share Ideas, Discuss, and Collaborate</h1>
+    <p>Join the conversation and contribute to the future of learning in Uganda.</p>
+  </section>
+
+  <section class="community-section">
+    <h2>Latest Discussions</h2>
+
+    <!-- Latest Discussion Posts -->
+    <div id="discussion-list"></div>
+
+    <!-- Form for creating a new post -->
+    <div class="submit-form">
+      <h3>Start a Discussion</h3>
+      <form>
+        <input type="text" placeholder="Your Name" required/>
+        <input type="text" placeholder="Discussion Topic" required/>
+        <textarea placeholder="Write your message here..." rows="4" required></textarea>
+        <button type="submit">Post</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div>
+      <p style="font-size: 1.5rem;"><strong>&copy; 2025 Smart Curriculum Uganda</strong></p>
+      <p>All Rights Reserved.</p>
+      <div class="social" style="margin: 1rem 0;">
+        <a href="https://www.facebook.com/SmartCurriculumUganda" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/SmartCurriculumUganda" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/SmartCurriculumUganda" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p>Contact Us:</p>
+      <p><a href="mailto:info@smartcurriculum.ug"><i class="fas fa-envelope"></i> info@smartcurriculum.ug</a></p>
+      <p><a href="https://wa.me/256701234567" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></p>
+      <p><a href="tel:+256701234567"><i class="fas fa-phone"></i> +256 701 234 567</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.querySelector(".submit-form form");
+      const nameInput = form.querySelector("input[placeholder='Your Name']");
+      const topicInput = form.querySelector("input[placeholder='Discussion Topic']");
+      const messageInput = form.querySelector("textarea");
+      const discussionsSection = document.getElementById("discussion-list");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        // Create new post box
+        const post = document.createElement("div");
+        post.classList.add("post-box");
+
+        const title = document.createElement("h3");
+        title.textContent = `📝 ${topicInput.value} (by ${nameInput.value})`;
+
+        const content = document.createElement("p");
+        content.textContent = messageInput.value;
+
+        const commentBox = document.createElement("div");
+        commentBox.innerHTML = `
+          <h4>💬 Comments</h4>
+          <div class="comments"></div>
+          <input type="text" placeholder="Add a comment..." class="comment-input"/>
+          <button class="comment-btn">Comment</button>
+        `;
+
+        post.appendChild(title);
+        post.appendChild(content);
+        post.appendChild(commentBox);
+
+        // Insert new post before the form
+        discussionsSection.insertBefore(post, form.parentElement);
+
+        // Reset the form after posting
+        form.reset();
+      });
+
+      // Handle dynamic comment buttons
+      document.addEventListener("click", function (e) {
+        if (e.target.classList.contains("comment-btn")) {
+          const input = e.target.previousElementSibling;
+          const commentsDiv = e.target.parentElement.querySelector(".comments");
+          if (input.value.trim() !== "") {
+            const newComment = document.createElement("p");
+            newComment.textContent = `🗨️ ${input.value}`;
+            commentsDiv.appendChild(newComment);
+            input.value = "";  // Clear the comment input field
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>

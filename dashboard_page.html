@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CurriSmart.Uganda - Dashboard</title>
+  <link rel="stylesheet" href="style/main.css" />
+  <script defer src="js/main.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <style>
+    :root {
+      --primary: #1b2d4f;
+      --accent: #c4f000;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--white);
+      color: var(--primary);
+    }
+
+    header {
+      background-color: var(--primary);
+      color: var(--white);
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      background-color: var(--accent);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      padding: 0.5rem;
+    }
+
+    nav a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: darkgreen;
+    }
+
+    .hero {
+      background: linear-gradient(to right, var(--primary), var(--accent));
+      color: var(--white);
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    .hero img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      margin-top: 1rem;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .feature-card {
+      background-color: var(--accent);
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .feature-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    .feature-card a {
+      display: block;
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .feature-card p {
+      margin-bottom: 1rem;
+    }
+
+    .feature-card button {
+      background-color: var(--primary);
+      color: var(--white);
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .feature-card button:hover {
+      background-color: #0f1d33;
+    }
+
+    .about-section {
+      background-color: #f7f7f7;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .about-section h2 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .about-section p {
+      max-width: 800px;
+      margin: 0 auto 1rem auto;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+      font-size: 1rem;
+      border-top: 5px solid var(--accent);
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    footer .social a {
+      font-size: 1.5rem;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CurriSmart.Uganda</h1>
+    <p>STEM is the Solution</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="academic.html">Academics</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="forms.html">Forms</a>
+    <a href="community.html">Community</a>
+    <a href="games.html">Games</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Student Dashboard</h1>
+    <p>Track your academic progress, attendance, and achievements all in one place.</p>
+    <img src="https://via.placeholder.com/1200x400/1b2d4f/c4f000?text=Dashboard+Overview" alt="Dashboard Overview">
+  </section>
+
+  <section class="features">
+    <div class="feature-card">
+      <img src="https://via.placeholder.com/400x200/c4f000/1b2d4f?text=Performance+Tracker" alt="Performance Tracker">
+      <a href="#">📈 Performance Tracker</a>
+      <p>View grades, averages, and improvement charts across subjects.</p>
+      <button>Access</button>
+    </div>
+    <div class="feature-card">
+      <img src="https://via.placeholder.com/400x200/c4f000/1b2d4f?text=Attendance" alt="Attendance Monitor">
+      <a href="#">📅 Attendance Monitor</a>
+      <p>Track attendance and punctuality records over time.</p>
+      <button>Access</button>
+    </div>
+    <div class="feature-card">
+      <img src="https://via.placeholder.com/400x200/c4f000/1b2d4f?text=Subject+Reports" alt="Subject Reports">
+      <a href="#">📚 Subject Reports</a>
+      <p>Check detailed feedback and reports by subject.</p>
+      <button>Access</button>
+    </div>
+    <div class="feature-card">
+      <img src="https://via.placeholder.com/400x200/c4f000/1b2d4f?text=Behaviour+Log" alt="Behaviour Log">
+      <a href="#">🧾 Behaviour Log</a>
+      <p>Review behaviour logs and teacher remarks.</p>
+      <button>Access</button>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <h2>How the Dashboard Helps You</h2>
+    <p>The CurriSmart Dashboard is designed to empower students with real-time academic insights. Whether it's tracking test performance, keeping up with attendance, or checking weekly feedback, this tool keeps everything clear and structured.</p>
+    <p>Built with simplicity and accessibility in mind, the dashboard is usable on feature phones, smartphones, tablets, and PCs. Performance analytics are visualized in an engaging and mobile-friendly format.</p>
+  </section>
+
+  <footer>
+    <div>
+      <p style="font-size: 1.5rem;"><strong>&copy; 2025 CurriSmart.Uganda</strong></p>
+      <p>All Rights Reserved.</p>
+      <div class="social" style="margin: 1rem 0;">
+        <a href="https://www.facebook.com/CurriSmartUganda" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/CurriSmartUganda" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/CurriSmartUganda" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p>Contact Us:</p>
+      <p><a href="mailto:info@curismart.ug"><i class="fas fa-envelope"></i> info@curismart.ug</a></p>
+      <p><a href="https://wa.me/256701234567" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></p>
+      <p><a href="tel:+256701234567"><i class="fas fa-phone"></i> +256 701 234 567</a></p>
+    </div>
+  </footer>
+</body>
+</html>

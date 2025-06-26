@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CurriSmart.Uganda - Performance Tracker</title>
+  <link rel="stylesheet" href="style/main.css" />
+  <script defer src="js/main.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <style>
+    :root {
+      --primary: #1b2d4f;
+      --accent: #c4f000;
+      --white: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--white);
+      color: var(--primary);
+    }
+
+    header, footer {
+      background-color: var(--primary);
+      color: var(--white);
+      text-align: center;
+      padding: 1rem;
+    }
+
+    nav {
+      background-color: var(--accent);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      padding: 0.5rem;
+    }
+
+    nav a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: darkgreen;
+    }
+
+    .hero {
+      background: linear-gradient(to right, var(--primary), var(--accent));
+      color: var(--white);
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .tracker-container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 2rem;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 0.75rem;
+      text-align: center;
+    }
+
+    th {
+      background-color: var(--primary);
+      color: var(--white);
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    .summary {
+      background-color: var(--accent);
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 1px 1px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CurriSmart.Uganda</h1>
+    <p>STEM is the Solution</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="academic.html">Academics</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="forms.html">Forms</a>
+    <a href="community.html">Community</a>
+    <a href="games.html">Games</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h1>📈 Performance Tracker</h1>
+    <p>Get a full view of your subject performance and improvements.</p>
+  </section>
+
+  <section class="tracker-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Subject</th>
+          <th>Term 1</th>
+          <th>Term 2</th>
+          <th>Term 3</th>
+          <th>Average</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mathematics</td>
+          <td>84</td>
+          <td>88</td>
+          <td>91</td>
+          <td>87.7</td>
+        </tr>
+        <tr>
+          <td>English</td>
+          <td>78</td>
+          <td>74</td>
+          <td>80</td>
+          <td>77.3</td>
+        </tr>
+        <tr>
+          <td>Physics</td>
+          <td>65</td>
+          <td>70</td>
+          <td>75</td>
+          <td>70.0</td>
+        </tr>
+        <tr>
+          <td>Chemistry</td>
+          <td>67</td>
+          <td>72</td>
+          <td>79</td>
+          <td>72.7</td>
+        </tr>
+        <tr>
+          <td>Biology</td>
+          <td>60</td>
+          <td>64</td>
+          <td>68</td>
+          <td>64.0</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="summary">
+      <h3>Performance Summary</h3>
+      <p><strong>Overall Average:</strong> 74.3%</p>
+      <p><strong>Strongest Subject:</strong> Mathematics</p>
+      <p><strong>Most Improved:</strong> Chemistry</p>
+    </div>
+  </section>
+
+  <footer>
+    <div>
+      <p style="font-size: 1.5rem;"><strong>&copy; 2025 CurriSmart.Uganda</strong></p>
+      <p>All Rights Reserved.</p>
+      <div class="social" style="margin: 1rem 0;">
+        <a href="https://www.facebook.com/CurriSmartUganda" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/CurriSmartUganda" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/CurriSmartUganda" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p>Contact Us:</p>
+      <p><a href="mailto:info@curismart.ug"><i class="fas fa-envelope"></i> info@curismart.ug</a></p>
+      <p><a href="https://wa.me/256701234567" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></p>
+      <p><a href="tel:+256701234567"><i class="fas fa-phone"></i> +256 701 234 567</a></p>
+    </div>
+  </footer>
+</body>
+</html>

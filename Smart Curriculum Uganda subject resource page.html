@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Curriculum Uganda - Subject Resources</title>
+  <link rel="stylesheet" href="style/main.css" />
+  <script defer src="js/main.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <style>
+    :root {
+      --primary: #1b2d4f;
+      --accent: #c4f000;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--white);
+      color: var(--primary);
+    }
+
+    header {
+      background-color: var(--primary);
+      color: var(--white);
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      background-color: var(--accent);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      padding: 0.5rem;
+    }
+
+    nav a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: darkgreen;
+    }
+
+    .resource-hero {
+      background: linear-gradient(to right, var(--primary), var(--accent));
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    .resource-section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .upload-form, .resource-list {
+      background: #f9f9f9;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .upload-form input, .upload-form textarea, .upload-form button {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .upload-form button {
+      background-color: var(--primary);
+      color: white;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .upload-form button:hover {
+      background-color: darkblue;
+    }
+
+    .resource-item {
+      margin-bottom: 1rem;
+    }
+
+    .resource-item a {
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: bold;
+    }
+
+    .resource-item a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+      font-size: 1rem;
+      border-top: 5px solid var(--accent);
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    footer .social a {
+      font-size: 1.5rem;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Smart Curriculum Uganda</h1>
+    <p>Subject Resources</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="academic.html">Academics</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="forms.html">Forms</a>
+    <a href="community.html">Community</a>
+    <a href="games.html">Games</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="resource-hero">
+    <h1>Post and Download Subject Materials</h1>
+    <p>Share and access notes, papers, and other useful content.</p>
+  </section>
+
+  <section class="resource-section">
+    <div class="upload-form">
+      <h2>Upload a Resource</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="text" placeholder="Subject" required />
+        <textarea placeholder="Description..." rows="4" required></textarea>
+        <input type="file" required />
+        <button type="submit">Upload</button>
+      </form>
+    </div>
+
+    <div class="resource-list">
+      <h2>Available Resources</h2>
+      <div class="resource-item">
+        <p><a href="#" download>Physics Paper 1 - 2024 Mock.pdf</a> — Posted by M. Ssebuggwawo</p>
+      </div>
+      <div class="resource-item">
+        <p><a href="#" download>Chemistry Notes - Organic Reactions.docx</a> — Posted by J. Jjuuko</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div>
+      <p style="font-size: 1.5rem;"><strong>&copy; 2025 Smart Curriculum Uganda</strong></p>
+      <p>All Rights Reserved. Powered by Vajoresko Technologies.</p>
+      <div class="social" style="margin: 1rem 0;">
+        <a href="https://www.facebook.com/SmartCurriculumUganda" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/SmartCurriculumUganda" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/SmartCurriculumUganda" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/256701234567" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:info@smartcurriculum.ug"><i class="fas fa-envelope"></i></a>
+        <a href="tel:+256701234567"><i class="fas fa-phone"></i></a>
+      </div>
+      <p><strong>Address:</strong> Kampala, Uganda</p>
+      <p><strong>Working Hours:</strong> Mon - Fri: 8am - 5pm</p>
+    </div>
+  </footer>
+</body>
+</html>

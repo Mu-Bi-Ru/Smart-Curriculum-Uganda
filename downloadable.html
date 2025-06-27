@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Download Resources | Smart Curriculum Uganda</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <style>
+    :root {
+      --primary: #1b2d4f;
+      --accent: #c4f000;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--white);
+      color: var(--primary);
+    }
+
+    header {
+      background-color: var(--primary);
+      color: var(--white);
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      background-color: var(--accent);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      padding: 0.5rem;
+    }
+
+    nav a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: darkgreen;
+    }
+
+    .page-header {
+      background: linear-gradient(to right, var(--primary), var(--accent));
+      color: var(--white);
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    .downloads-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    .category-section {
+      margin-bottom: 3rem;
+    }
+
+    .category-title {
+      color: var(--primary);
+      border-bottom: 3px solid var(--accent);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .resources-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .resource-card {
+      background-color: var(--white);
+      border: 2px solid var(--accent);
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .resource-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .resource-icon {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .resource-title {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: var(--primary);
+    }
+
+    .resource-description {
+      color: #555;
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .download-btn {
+      display: inline-block;
+      background-color: var(--primary);
+      color: var(--white);
+      padding: 0.7rem 1.5rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      width: 100%;
+      text-align: center;
+    }
+
+    .download-btn:hover {
+      background-color: #0f1d33;
+    }
+
+    .file-info {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      color: #777;
+      margin-top: 0.5rem;
+    }
+
+    footer {
+      background-color: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+      font-size: 1rem;
+      border-top: 5px solid var(--accent);
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    footer .social a {
+      font-size: 1.5rem;
+      margin: 0 10px;
+    }
+
+    @media (max-width: 768px) {
+      .resources-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Smart Curriculum Uganda</h1>
+    <p>Smart Learning, Brighter Future</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="academic.html">Academics</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="forms.html">Forms</a>
+    <a href="community.html">Community</a>
+    <a href="games.html">Games</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="page-header">
+    <h1>Educational Resources Download Center</h1>
+    <p>Access all learning materials, revision aids, and competency tasks in one place</p>
+  </section>
+
+  <div class="downloads-container">
+    <!-- Subject Resources Section -->
+    <section class="category-section">
+      <h2 class="category-title"><i class="fas fa-book-open"></i> Subject Resources</h2>
+      <div class="resources-grid">
+        <div class="resource-card">
+          <div class="resource-icon"><i class="fas fa-calculator"></i></div>
+          <h3 class="resource-title">Mathematics O-Level</h3>
+          <p class="resource-description">Complete curriculum guide with lesson plans and activities for all topics.</p>
+          <a href="downloads/math-o-level.pdf" class="download-btn" download>
+            Download PDF
+          </a>
+          <div class="file-info">
+            <span>PDF Document</span>
+            <span>2.4 MB</span>
+          </div>
+        </div>
+
+        <div class="resource-card">
+          <div class="resource-icon"><i class="fas fa-flask"></i></div>
+          <h3 class="resource-title">Science Practical Guides</h3>
+          <p class="resource-description">Step-by-step instructions for all required science experiments.</p>
+          <a href="downloads/science-practicals.zip" class="download-btn" download>
+            Download ZIP
+          </a>
+          <div class="file-info">
+            <span>ZIP Archive</span>
+            <span>5.1 MB</span>
+          </div>
+        </div>
+
+        <div class="resource-card">
+          <div class="resource-icon"><i class="fas fa-globe-africa"></i></div>
+          <h3 class="resource-title">Geography Resource Pack</h3>
+          <p class="resource-description">Maps, case studies, and worksheets for Ugandan geography.</p>
+          <a href="downloads/geography-resources.zip" class="download-btn" download>
+            Download ZIP
+          </a>
+          <div class="file-info">
+            <span>ZIP Archive</span>
+            <span>8.7 MB</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Revision Materials Section -->
+    <section class="category-section">
+      <h2 class="category-title"><i class="fas fa-highlighter"></i> Revision Materials</h2>
+      <div class="resources-grid">
+        <div class="resource-card">
+          <div class="resource-icon"><i class="fas fa-question-circle"></i></div>
+          <h3 class="resource-title">Past Papers Collection</h3>
+          <p class="resource-description">10 years of UNEB past papers with marking guides for core subjects.</p>
+          <a href="downloads/past-papers.zip" class="download-btn" download>
+            Download ZIP
+          </a>
+          <div class="file-info">
+            <span>ZIP Archive</span>
+            <span>15.2 MB</span>
+          </div>
+        </div>
+
+        <div class="resource-card">
+          <div class="resource-icon"><i class="fas fa-brain"></i></div>
+          <h3 class="resource-title">Revision Flashcards</h3>
+          <p class="resource-description">Printable flashcards for key concepts in all major subjects.</p>
+          <a href="downloads/revision-flashcards.pdf" class="download-btn" download>
+            Download PDF
+          </a>
+          <div class="file-info">
+            <span>PDF Document</span>
+            <span>3.8 MB</span>
+          </div>
+        </div>
+
+        <div class="resource-card">
+          <div class="resource-icon"><i class="fas fa-chart-bar"></i></div>
+          <h3 class="resource-title">Topic Summary Sheets</h3>
+          <p class="resource-description">Condensed notes for quick revision before exams.</p>
+          <a href="downloads/topic-summaries.zip" class="download-btn" download>
+            Download ZIP
+          </a>
+          <div class="file-info">
+            <span>ZIP Archive</span>
+            <span>6.5 MB</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learning Aids Section -->
+    <section class="category-section">
+      <h2 class="category-title"><i class="fas fa-graduation-cap"></i> Learning Aids</h2>
+      <div class="resources-grid">
+        <div class="resource-card">
+          <div class="resource-icon"><i class="fas fa-atom"></i></div>
+          <h3 class="resource-title">STEM Activity Book</h3>
+          <p class="resource-description">Hands-on activities to reinforce STEM concepts.</p>
+          <a href="downloads/stem-activity-book.pdf" class="download-btn" download>
+            Download PDF
+          </a>
+          <div class="file-info">
+            <span>PDF Document</span>
+            <span>4.2 MB</span>
+          </div>
+        </div>
+
+        <div class="resource-card">
+          <div class="resource-icon"><i class="fas fa-language"></i></div>
+          <h3 class="resource-title">English Language Toolkit</h3>
+          <p class="resource-description">Grammar guides, vocabulary builders, and writing templates.</p>
+          <a href="downloads/english-toolkit.zip" class="download-btn" download>
+            Download ZIP
+          </a>
+          <div class="file-info">
+            <span>ZIP Archive</span>
+            <span>7.3 MB</span>
+          </div>
+        </div>
+
+        <div class="resource-card">
+          <div class="resource-icon"><i class="fas fa-laptop-code"></i></div>
+          <h3 class="resource-title">Digital Skills Workbook</h3>
+          <p class="resource-description">Introduction to computer skills and basic programming.</p>
+          <a href="downloads/digital-skills.pdf" class="download-btn" download>
+            Download PDF
+          </a>
+          <div class="file-info">
+            <span>PDF Document</span>
+            <span>5.6 MB</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Competency Tasks Section -->
+    <section class="category-section">
+      <h2 class="category-title"><i class="fas fa-tasks"></i> Competency Tasks</h2>
+      <div class="resources-grid">
+        <div class="resource-card">
+          <div class="resource-icon"><i class="fas fa-project-diagram"></i></div>
+          <h3 class="resource-title">Project-Based Learning Kits</h3>
+          <p class="resource-description">Complete guides for implementing PBL across subjects.</p>
+          <a href="downloads/pbl-kits.zip" class="download-btn" download>
+            Download ZIP
+          </a>
+          <div class="file-info">
+            <span>ZIP Archive</span>
+            <span>9.8 MB</span>
+          </div>
+        </div>
+
+        <div class="resource-card">
+          <div class="resource-icon"><i class="fas fa-hands-helping"></i></div>
+          <h3 class="resource-title">Collaborative Activities</h3>
+          <p class="resource-description">Group tasks to develop teamwork and problem-solving skills.</p>
+          <a href="downloads/collaborative-tasks.pdf" class="download-btn" download>
+            Download PDF
+          </a>
+          <div class="file-info">
+            <span>PDF Document</span>
+            <span>3.1 MB</span>
+          </div>
+        </div>
+
+        <div class="resource-card">
+          <div class="resource-icon"><i class="fas fa-lightbulb"></i></div>
+          <h3 class="resource-title">Critical Thinking Challenges</h3>
+          <p class="resource-description">Real-world problems to develop analytical skills.</p>
+          <a href="downloads/critical-thinking.zip" class="download-btn" download>
+            Download ZIP
+          </a>
+          <div class="file-info">
+            <span>ZIP Archive</span>
+            <span>4.5 MB</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div>
+      <p style="font-size: 1.5rem;"><strong>&copy; 2025 Smart Curriculum Uganda</strong></p>
+      <p>All Rights Reserved.</p>
+      <div class="social" style="margin: 1rem 0;">
+        <a href="https://www.facebook.com/SmartCurriculumUganda" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/SmartCurriculumUganda" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/SmartCurriculumUganda" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p>Contact Us:</p>
+      <p><a href="mailto:info@smartcurriculum.ug"><i class="fas fa-envelope"></i> info@smartcurriculum.ug</a></p>
+      <p><a href="https://wa.me/+256770327238" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp group</a></p>
+      <p><a href="tel:+256770327238"><i class="fas fa-phone"></i> +256 770 327 238</a></p>
+    </div>
+  </footer>
+</body>
+</html>
